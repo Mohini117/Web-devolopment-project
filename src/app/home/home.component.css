@@ -1,0 +1,41 @@
+.container {
+    display: flex; /* Keep this to make the columns sit next to each other */
+    justify-content: center; /* Center the columns */
+}
+
+.row {
+    display: flex; /* Make sure the row displays its children in a row */
+}
+
+.col-lg {
+    border: 1px solid transparent; /* Adjust border color as needed */
+    border-radius: 5px; /* Optional: for rounded corners */
+    position: relative;
+    margin: 10px; /* Optional: Add margin for spacing between columns */
+    flex: 1; /* Allow columns to grow and fill space */
+    padding: 80px; /* Optional: Add padding for content */
+}
+
+.col-lg::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust for shadow positioning */
+    left: -5px; /* Adjust for shadow positioning */
+    right: -5px; /* Adjust for shadow positioning */
+    bottom: -5px; /* Adjust for shadow positioning */
+    background: rgba(0, 0, 0, 0.1); /* Adjust shadow color */
+    border-radius: 5px; /* Match with border radius */
+    z-index: -1; /* Send shadow behind the border */
+}
+
+.center {
+    text-align: center;
+}
+ 
+img {
+    
+    border-radius: 50%; /* Makes the image circular */
+    width: 256px; /* Fixed width */
+    height: 256px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits well */
+}
