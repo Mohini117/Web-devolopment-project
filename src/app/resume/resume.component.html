@@ -1,1 +1,124 @@
-<p>resume works!</p>
+<div class="container">
+    <button (click)="DownloadFile()" class="btn">Download pdf Resume</button>
+</div>
+
+<div class="accordion-container">
+    <!-- Work Experience Section -->
+    <div class="accordion-item">
+      <input type="checkbox" id="work-exp-toggle" class="accordion-toggle">
+      <label for="work-exp-toggle" class="accordion-label">Work Experience</label>
+      <div class="accordion-content">
+        <h3>Software Engineer</h3>
+        <p>Company: XYZ Tech</p>
+        <p>Duration: Jan 2020 - Present</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>Developed scalable web applications using Angular and React.</li>
+          <li>Collaborated with cross-functional teams for project success.</li>
+          <li>Maintained code quality through unit testing and peer reviews.</li>
+        </ul>
+  
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Involved in the entire software development lifecycle, from planning to deployment.</p>
+          <p>Participated in Agile sprints and retrospectives for continuous improvement.</p>
+        </div>
+  
+        <h3>Junior Developer</h3>
+        <p>Company: ABC Solutions</p>
+        <p>Duration: Jul 2018 - Dec 2019</p>
+        <p>Responsibilities:</p>
+        <ul>
+          <li>Assisted in the development of internal tools using JavaScript.</li>
+          <li>Supported front-end and back-end development tasks.</li>
+          <li>Debugged code and optimized performance of applications.</li>
+        </ul>
+  
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Worked closely with senior developers to enhance skill set and coding standards.</p>
+          <p>Contributed to the documentation of projects and processes.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Education Section -->
+    <div class="accordion-item">
+      <input type="checkbox" id="education-toggle" class="accordion-toggle">
+      <label for="education-toggle" class="accordion-label">Education</label>
+      <div class="accordion-content">
+        <h3>Bachelor of Engineering in Information Technology</h3>
+        <p>Institution: PRMITR College</p>
+        <p>Duration: 2015 - 2019</p>
+        <p>GPA: 3.8/4.0</p>
+        <p>Key Courses:</p>
+        <ul>
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Software Engineering</li>
+        </ul>
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Graduated with honors and participated in various tech-related projects.</p>
+          <p>Completed a capstone project focused on developing a web application.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Certifications Section -->
+    <div class="accordion-item">
+      <input type="checkbox" id="certifications-toggle" class="accordion-toggle">
+      <label for="certifications-toggle" class="accordion-label">Certifications</label>
+      <div class="accordion-content">
+        <h3>Certified Machine Learning Engineer</h3>
+        <p>Institution: Coursera (Andrew Ng)</p>
+        <p>Date: April 2021</p>
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Completed projects involving real-world datasets to apply machine learning concepts.</p>
+        </div>
+  
+        <h3>Full-Stack Developer</h3>
+        <p>Institution: Udemy</p>
+        <p>Date: November 2020</p>
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Built full-stack applications using the MERN stack.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Skills Section -->
+    <div class="accordion-item">
+      <input type="checkbox" id="skills-toggle" class="accordion-toggle">
+      <label for="skills-toggle" class="accordion-label">Skills</label>
+      <div class="accordion-content">
+        <h3>Technical Skills:</h3>
+        <ul>
+          <li>JavaScript, TypeScript, Python</li>
+          <li>Angular, React, Node.js</li>
+          <li>Machine Learning, Deep Learning</li>
+          <li>Database: MySQL, MongoDB</li>
+          <li>Version Control: Git, GitHub</li>
+        </ul>
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Experience with responsive web design and RESTful APIs.</p>
+        </div>
+  
+        <h3>Soft Skills:</h3>
+        <ul>
+          <li>Problem-Solving</li>
+          <li>Team Collaboration</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+          <li>Communication</li>
+        </ul>
+        <button class="dropdown-toggle">More Details</button>
+        <div class="dropdown-content">
+          <p>Effective communicator in diverse team settings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

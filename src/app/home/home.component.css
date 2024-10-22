@@ -1,41 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    background: linear-gradient(to right, #f0f4f8, #d9e6f2); /* Gradient background */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
 .container {
-    display: flex; /* Keep this to make the columns sit next to each other */
-    justify-content: center; /* Center the columns */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 40px 20px; /* Padding around the container */
 }
 
 .row {
-    display: flex; /* Make sure the row displays its children in a row */
+    display: flex; /* Use flexbox for row layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Gap between columns */
 }
 
 .col-lg {
-    border: 1px solid transparent; /* Adjust border color as needed */
-    border-radius: 5px; /* Optional: for rounded corners */
-    position: relative;
-    margin: 10px; /* Optional: Add margin for spacing between columns */
-    flex: 1; /* Allow columns to grow and fill space */
-    padding: 80px; /* Optional: Add padding for content */
+    flex: 1; /* Flex grow for equal column widths */
+    padding: 20px; /* Padding inside each column */
+    background: white; /* White background for columns */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Column direction */
 }
 
-.col-lg::before {
-    content: '';
-    position: absolute;
-    top: -5px; /* Adjust for shadow positioning */
-    left: -5px; /* Adjust for shadow positioning */
-    right: -5px; /* Adjust for shadow positioning */
-    bottom: -5px; /* Adjust for shadow positioning */
-    background: rgba(0, 0, 0, 0.1); /* Adjust shadow color */
-    border-radius: 5px; /* Match with border radius */
-    z-index: -1; /* Send shadow behind the border */
+.about-me, .featured-projects {
+    margin-top: 20px; /* Margin above sections */
+    flex-grow: 1; /* Allow the sections to grow equally */
+}
+
+.col-lg:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .center {
-    text-align: center;
+    text-align: center; /* Center text */
 }
- 
-img {
-    
-    border-radius: 50%; /* Makes the image circular */
-    width: 256px; /* Fixed width */
-    height: 256px; /* Fixed height */
-    object-fit: cover; /* Ensures the image fits well */
+
+h2 {
+    color: #007bff; /* Blue color for headings */
+    font-size: 2rem; /* Font size for h2 */
+    margin-bottom: 15px; /* Margin below h2 */
+}
+
+h4 {
+    font-size: 1.5rem; /* Font size for h4 */
+    color: #495057; /* Darker color for h4 */
+    margin: 10px 0; /* Margin around h4 */
+}
+
+.img {
+    border-radius: 50%; /* Circular profile image */
+    border: 4px solid #007bff; /* Blue border around the image */
+    margin: 10px 0; /* Margin around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for image */
+}
+
+.project-gallery {
+    display: flex; /* Use flexbox for the gallery */
+    flex-wrap: wrap; /* Wrap images to the next line */
+    justify-content: center; /* Center the images */
+    gap: 15px; /* Space between images */
+    margin-top: 15px; /* Margin above the gallery */
+    flex-grow: 1; /* Allow the gallery to grow */
+}
+
+.project-img {
+    width: calc(25% - 15px); /* 4 images per row with gap */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for images */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.project-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.portfolio-link {
+    color: #007bff; /* Blue color for link */
+    text-decoration: none; /* No underline */
+}
+
+.portfolio-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-img {
+        width: calc(50% - 15px); /* 2 images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-img {
+        width: 100%; /* 1 image per row on very small screens */
+    }
+}
+p{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container */
+    padding: 20px; /* Padding around the container */
+}
+
+.row {
+    display: flex; /* Use flexbox for row layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.col-lg {
+    flex: 1; /* Flex-grow for columns */
+    margin: 10px; /* Margin between columns */
+    padding: 20px; /* Padding inside columns */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff; /* Background color */
+}
+
+.about-me, .featured-projects, .youtube-section {
+    display: flex; /* Flexbox for inner alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+.youtube-section {
+    position: relative; /* Position relative for the video */
+    padding: 20px; /* Padding for inner content */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    margin-top: 20px; /* Margin above the section */
+}
+
+.background-video {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire area */
+    z-index: -1; /* Send the video to the background */
+}
+
+.youtube-content {
+    position: relative; /* Position relative for the content */
+    z-index: 1; /* Bring content above the video */
+    color: white; /* Text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.youtube-section h2 {
+    color: #FF0000; /* YouTube red color */
+    margin-bottom: 10px; /* Margin below heading */
+}
+
+.youtube-link {
+    color: #007bff; /* Blue color for link */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold link text */
+}
+
+.youtube-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.project-gallery {
+    display: flex; /* Flexbox for project images */
+    justify-content: center; /* Center images */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.project-img {
+    width: 100px; /* Width of project images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Margin between images */
+}
+
+
+.unique-quote {
+    font-weight: bold;
+    font-size: 1em;
+    color: #3498db; /* Bright blue color */
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    border: 2px solid #3498db; /* Border to highlight the quote */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ecf6fd; /* Light background */
+    position: relative; /* Positioning for pseudo-elements */
+}
+
+.unique-quote::before,
+.unique-quote::after {
+    content: '"'; /* Adding double quotes */
+    font-size: 3em;
+    color: #2c3e50; /* Dark color for quotes */
+    position: absolute;
+    top: -20px; /* Positioning above the quote */
+}
+.unique-quote::before {
+    left: 20px; /* Positioning for left quote */
+}
+.unique-quote::after {
+    right: 20px; /* Positioning for right quote */
 }

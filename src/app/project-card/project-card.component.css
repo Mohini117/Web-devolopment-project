@@ -1,0 +1,83 @@
+/* Card Container */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    text-align: center;  /* Centers the content */
+    border-radius: 10px;  /* Smooths the corners */
+    padding: 1px;  /* Adds padding inside the card */
+    background-color: #fff;  /* White background for the card */
+    margin: 20px auto;  /* Centers the card horizontally */
+    width: 300px;  /* Set fixed width */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;  /* Larger font size for the title */
+    font-weight: bold;  /* Makes the title bold */
+    margin-bottom: 15px;  /* Adds space between title and description */
+    color: #333;  /* Dark gray text color */
+     
+}
+
+/* Card Text */
+.card-text {
+    font-size: 1rem;  /* Normal size for description */
+    color: #666;  /* Slightly lighter gray for the text */
+    margin-bottom: 20px;  /* Space between text and button */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #007bff;  /* Bootstrap primary blue */
+    border: none;  /* Removes border */
+    padding: 10px 20px;  /* Adds padding to the button */
+    border-radius: 5px;  /* Smooth corners for button */
+    color: white;  /* White text */
+    cursor: pointer;  /* Changes cursor to pointer on hover */
+       
+}
+
+.btn:hover{
+    background-color: #333;
+    
+}
+/* Card Footer */
+.card-footer {
+    background-color: #f8f9fa;  /* Light gray background for footer */
+    padding: 10px;  /* Adds padding inside the footer */
+    border-top: 1px solid #ddd;  /* Adds a light border at the top */
+    border-radius: 0 0 10px 10px; 
+   
+}
+/* Flex container for footer items */
+.d-flex {
+    display: flex;   
+    flex-wrap: nowrap;  /* Allows items to wrap if necessary */
+    justify-content: center;  /* Centers items horizontally */
+      
+}
+
+/* Individual Footer Items */
+.card-footer div {
+    /* background-color: #1968c3;  Bootstrap primary blue for item background */
+    color: white;  /* White text */
+    padding: 5px 15px;   
+    border-radius: 20px;  /* Makes the items look like pills */
+    font-size: 0.875rem;  /* Slightly smaller text size */
+    font-weight: 500;  /* Semi-bold text */
+    text-align: center;  /* Centers the text inside each item */
+}
+.tagg{
+
+     
+    padding: 0 20px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 25px; 
+    line-height: 30px;
+    width:fit-content; 
+     
+    color: white;
+    margin-right: 0.5rem; 
+    margin-bottom: 0.25rem;
+    
+}

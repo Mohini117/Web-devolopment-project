@@ -1,0 +1,102 @@
+/* Container for centering */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+     
+    align-items: flex-start;
+}
+
+/* General Button Styling */
+.btn {
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text */
+    border: 2px solid #333; /* Solid border */
+    padding: 10px 20px; /* Padding */
+    font-size: 18px; /* Slightly larger font */
+    font-weight: bold; /* Bold text */
+    letter-spacing: 1px; /* Increase letter spacing */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Optional: Hover effect */
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Accordion Container */
+.accordion-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Accordion Item */
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Accordion Toggle */
+  .accordion-toggle {
+    display: none;
+  }
+  
+  /* Accordion Label (Clickable) */
+  .accordion-label {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-label:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Accordion Content (Initially Hidden) */
+  .accordion-content {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  /* Show Content when Toggle is Checked */
+  .accordion-toggle:checked + .accordion-label + .accordion-content {
+    display: block;
+  }
+  
+  /* Style for Headings in Content */
+  .accordion-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for Lists in Content */
+  .accordion-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .accordion-content ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Global Styling for Accordion */
+  .accordion-content p {
+    margin: 10px 0;
+    color: #555;
+  }
+  

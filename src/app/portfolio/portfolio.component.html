@@ -1,1 +1,10 @@
-<p>portfolio works!</p>
+<div class="container">
+     
+        <div class="col" *ngFor="let project of projects">
+            <app-project-card [project]="project"></app-project-card>
+         
+        </div>
+    
+     
+</div>
+

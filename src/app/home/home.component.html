@@ -1,19 +1,50 @@
-
 <div class="container">
     <div class="row">
         <div class="col-lg">
-            <div class="center">
+            <div class="center about-me">
                 <h2>About Me</h2>
-               <img src="public/profile.jpg" width="256" height="256">
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nisi nesciunt asperiores, debitis in deleniti, praesentium soluta non sit reiciendis sint assumenda voluptates, dolore aliquam voluptatibus molestiae dolorum veritatis vitae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam earum odio nostrum, asperiores fuga soluta libero, dignissimos architecto corrupti quo molestiae praesentium? Officiis doloribus illum expedita rem, et eaque, voluptatem n .</p> 
+                <img src="profile.png" alt="profile pic" class="img" width="256" height="256">
+                 
+                <div>
+                    <h4>SDE&#64;Google|Ex-MIT Fellow</h4>
+                    
+                </div>
+                <p>Hello, I am John Doe, and I am a Web Developer who builds amazing websites for users using various powerful frameworks!</p>
             </div>
-
         </div>
         <div class="col-lg">
-            <div class="center">
-                <h2>Featured Project</h2>
+            <div class="center featured-projects">
+                <h2>Featured Projects</h2>
+                <h4>{{featuredProject.name}}</h4>
+
+                <!-- Project Images -->
+                <div class="project-gallery">
+                    <img src="project.jpg" alt="Project 1" class="project-img">
+                    <img src="project2.jpeg" alt="Project 2" class="project-img">
+                    <img src="project3.png" alt="Project 3" class="project-img">
+                    <img src="project4.jpeg" alt="Project 4" class="project-img">
+                </div>
+
+                <p>If you want to know more about my projects, feel free to navigate to the <a href="/portfolio" class="portfolio-link">Portfolio section</a>!</p>
+
+            </div>
+            <div class="unique-quote">Innovation distinguishes between a leader and a follower. – Steve Jobs</div>
+
+        </div>
+    </div>
+
+    <!-- YouTube Section with Background Video -->
+    <div class="row">
+        <div class="col-lg youtube-section">
+            <video autoplay muted loop class="background-video">
+                <source src="video0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="youtube-content">
+                <h2>YouTube Channel</h2>
+                <p>Explore my YouTube channel for tutorials, projects, and more! You can find valuable content related to web development and programming.</p>
+                <a href="https://www.youtube.com/channel/your_channel_id" target="_blank" class="youtube-link">Visit my YouTube Channel</a>
             </div>
         </div>
     </div>
 </div>
-
